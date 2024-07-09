@@ -2,20 +2,10 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  background-color: white;
-  padding: 10px 20px;
-  border-bottom: 1px solid #ddd;
 }
 
 .navbar-title {
-  font-size: 24px;
-  font-weight: bold;
-  margin-right: 20px;
-}
-
-.navbar-title-link {
-  text-decoration: none;
-  color: #333;
+  display: none;
 }
 
 .navbar-nav {
@@ -46,12 +36,9 @@
     position: fixed;
     top: 5px;
     left: 5px;
+    padding: 5px 10px;
     border-radius: 5px;
-    background-color: skyblue;
-  }
-
-  .navbar-title {
-    display: none;
+    background-color: silver;
   }
 
   .navbar-toggler {

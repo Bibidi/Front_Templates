@@ -13,7 +13,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <h1 className="navbar-title"><Link href="/" className="navbar-title-link">Logo</Link></h1>
+      <h1 className="navbar-title">Navigation</h1>
       <button className="navbar-toggler" onClick={toggleNavbar}>☰</button>
       <ul className={`navbar-nav navbar-collapse ${isOpen ? "open" : ""}`}>
         <li className="nav-item"><Link href="/" className="nav-item-link">Home</Link></li>
