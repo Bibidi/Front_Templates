@@ -31,6 +31,40 @@
   padding: 5px 10px;
 }
 
+.navbar-toggler {
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
 @media (max-width: 768px) {
-  
+  .navbar {
+    flex-direction: column;
+    gap: 5px;
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    border-radius: 5px;
+    background-color: skyblue;
+  }
+
+  .navbar-title {
+    display: none;
+  }
+
+  .navbar-toggler {
+    display: block;
+  }
+
+  .navbar-collapse {
+    display: none;
+    flex-direction: column;
+  }
+
+  .navbar-collapse.open {
+    display: flex;
+    gap: 10px;
+  }
 }
