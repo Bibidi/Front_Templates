@@ -4,24 +4,24 @@
   align-items: center;
 }
 
-.navbar-title {
+.navbarTitle {
   display: none;
 }
 
-.navbar-nav {
+.navbarNav {
   list-style: none;
   display: flex;
   gap: 20px;
 }
 
-.nav-item-link {
+.navItemLink {
   text-decoration: none;
   color: #333;
   font-weight: bold;
   padding: 5px 10px;
 }
 
-.navbar-toggler {
+.navbarToggler {
   font-size: 24px;
   background: none;
   border: none;
@@ -41,16 +41,16 @@
     background-color: silver;
   }
 
-  .navbar-toggler {
+  .navbarToggler {
     display: block;
   }
 
-  .navbar-collapse {
+  .navbarCollapse {
     display: none;
     flex-direction: column;
   }
 
-  .navbar-collapse.open {
+  .navbarCollapse.open {
     display: flex;
     gap: 10px;
   }

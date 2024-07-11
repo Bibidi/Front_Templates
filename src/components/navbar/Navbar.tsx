@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { useState } from "react"
-import "./navbar.css"
+import styles from "./Navbar.module.css"
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,14 +12,22 @@ const Navbar = () => {
   }
 
   return (
-    <nav className="navbar">
-      <h1 className="navbar-title">Navigation</h1>
-      <button className="navbar-toggler" onClick={toggleNavbar}>☰</button>
-      <ul className={`navbar-nav navbar-collapse ${isOpen ? "open" : ""}`}>
-        <li className="nav-item"><Link href="/" className="nav-item-link">Home</Link></li>
-        <li className="nav-item"><Link href="/HTML" className="nav-item-link">HTML</Link></li>
-        <li className="nav-item"><Link href="/CSS" className="nav-item-link">CSS</Link></li >
-        <li className="nav-item"><Link href="/Menu" className="nav-item-link">Menu</Link></li>
+    <nav className={styles.navbar}>
+      <h1 className={styles.navbarTitle}>Navigation</h1>
+      <button className={styles.navbarToggler} onClick={toggleNavbar}>☰</button>
+      <ul className={`${styles.navbarNav} ${styles.navbarCollapse} ${isOpen ? styles.open : ""}`}>
+        <li className={styles.navItem}>
+          <Link href="/" className={styles.navItemLink}>Home</Link>
+        </li>
+        <li className={styles.navItem}>
+          <Link href="/HTML" className={styles.navItemLink}>HTML</Link>
+        </li>
+        <li className={styles.navItem}>
+          <Link href="/CSS" className={styles.navItemLink}>CSS</Link>
+        </li >
+        <li className={styles.navItem}>
+          <Link href="/Menu" className={styles.navItemLink}>Menu</Link>
+        </li>
       </ul>
     </nav>
   );
